@@ -11,7 +11,11 @@ import { infoActions } from '../../store/info-slice';
 import { useDispatch } from 'react-redux';
 
 
+<<<<<<< HEAD
 const CardData = ({id, image, owner, name, description, visibility, watchers}) => {
+=======
+const CardData = ({id, image, owner, date, name, description, visibility, update, watchers}) => {
+>>>>>>> 364170ec3993ce68917be88bf18b3ac256fb38c1
     const dispatch = useDispatch();
     const sendData = () => {
         dispatch(

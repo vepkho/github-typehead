@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 body {
+<<<<<<< HEAD
+=======
+  margin: 0;
+>>>>>>> 364170ec3993ce68917be88bf18b3ac256fb38c1
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
