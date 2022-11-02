@@ -1,0 +1,13 @@
+.Container{
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.Cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px;
+}
