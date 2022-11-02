@@ -2,27 +2,24 @@ import React, { useCallback, useState } from 'react'
 
 import { Link } from 'react-router-dom';
 
-<<<<<<< HEAD
 import { infoActions } from '../../store/info-slice';
 import { useDispatch } from 'react-redux';
 
 import debounce from 'lodash.debounce';
 
 import { FormControl, FormControlLabel } from '@mui/material';
-=======
+
 import debounce from 'lodash.debounce';
 
 import styles from './Home.module.css'
 
 import { FormControl, FormControlLabel, CardActionArea } from '@mui/material';
->>>>>>> 364170ec3993ce68917be88bf18b3ac256fb38c1
 
 import TextField from '@mui/material/TextField';
 import Grid from '@mui/material/Grid';
 import Button from '@mui/material/Button';
 import Switch from '@mui/material/Switch';
 
-<<<<<<< HEAD
 import TableData from '../../components/tableData/TableData';
 import CardData from '../../components/cardData/CardData';
 
@@ -32,7 +29,6 @@ import Navigation from '../../components/navigation/Navigation';
 const Home = () => {
     const dispatch = useDispatch();
 
-=======
 import { useSelector } from 'react-redux';
 
 
@@ -45,7 +41,6 @@ import { infoActions } from '../../store/info-slice';
 import { useDispatch } from 'react-redux';
 
 const Home = () => {
->>>>>>> 364170ec3993ce68917be88bf18b3ac256fb38c1
     const [table, setTable] = useState(true)
     const [card, setCard] = useState(false)
     const [inputValue, setInputValue] = useState("");
@@ -71,25 +66,21 @@ const Home = () => {
             return response.json();
         })
         .then(data => {
-<<<<<<< HEAD
             setData(data.items);
         })
 
         dispatch(
             infoActions.clearList()
         )
-=======
             console.log(data);
             setData(data.items);
         })
->>>>>>> 364170ec3993ce68917be88bf18b3ac256fb38c1
     }
 
     const debounceHandler = useCallback(
         debounce(handleChange, 500)
     , [])
 
-<<<<<<< HEAD
   return (
     <div>
         <Navigation/>
@@ -150,7 +141,6 @@ const Home = () => {
                 </Link>
             }
         </div>
-=======
     const dispatch = useDispatch();
     const some = () => {
         dispatch(
@@ -217,8 +207,6 @@ const Home = () => {
                 </div>
             </Link>
         }
-        <button onClick={some}>asdf;sdjf;sjd;flj;s</button>
->>>>>>> 364170ec3993ce68917be88bf18b3ac256fb38c1
     </div>
   )
 }
